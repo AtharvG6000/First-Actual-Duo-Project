@@ -1,0 +1,48 @@
+body{
+    font-family: "Raleway";   
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.popup{
+    width: 500px;
+    height: 500px;
+    padding: 30px 20px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: center;
+}
+
+.popup.active{
+    opacity: 1;
+    top:50%;
+    transform: translate(-50%,-50%) scale(0.5);
+    transition:  transform 300ms cubic-bezier(0.18,0.89,0.43,1.19);
+}
+.popup .title{
+    margin: 5px 0px;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.popup .discription{
+    color: #222;
+    font-size:25px;
+    padding: 5px;
+    font-weight: 300;
+}
+
+.popup .dismiss-btn{
+margin-top: 15px;
+}
+
+.popup .dismiss-btn button{
+    padding: 10px 20px;
+}
